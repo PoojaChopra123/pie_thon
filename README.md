@@ -18,3 +18,7 @@
 - Scrape events from high school or bakery to see trends
 
 (lycee francais de chicago)
+
+AWS lambda - host function - auto connecting google sheets - live pulling data - 
+
+GSheet (python library) > python function (AWS host lambda) > Website 
