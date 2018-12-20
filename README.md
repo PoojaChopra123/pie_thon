@@ -10,3 +10,11 @@
 - ML for budget prediction for next year
 
 - Yelp review sentiment analyses
+
+- Sentiment comparison to nearby competitors (any stand out qualities or vice versa)
+
+- Single page app
+
+- Scrape events from high school or bakery to see trends
+
+(lycee francais de chicago)
