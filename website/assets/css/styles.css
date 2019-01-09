@@ -16,7 +16,11 @@ body {
 
     /* Visual */
     background-color: #ededed;
-    background-image: url('http://www.laboulangeriechicago.com/wp-content/uploads/2013/06/slide3.jpg')
+    background: url('http://www.laboulangeriechicago.com/wp-content/uploads/2013/06/slide3.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /* Media query for body */
@@ -42,8 +46,8 @@ body {
     border-color: rgb(27, 8, 0) !important;
 }
 
-.navbar-nav li a{
-  color: #fffff0 !important;
+.navbar-nav li a {
+    color: #fffff0 !important;
 }
 
 #logo {
@@ -128,7 +132,7 @@ body {
     color: rgb(243, 140, 0);
 }
 
-.description-content{
+.description-content {
     /* Box-model */
     padding: 30px;
 
@@ -141,7 +145,7 @@ body {
     border-radius: 10px;
 }
 
-.imageNav_content{
+.imageNav_content {
     /* Visual */
     background-color: #fff;
     opacity: 0.95;
