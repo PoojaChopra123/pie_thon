@@ -49,22 +49,37 @@
                     <div class="slideshow-container">
                         <!-- Full-width images with number and caption text -->
                         <div class="mySlides">
-                            <div class="numbertext">1 / 4</div>
+                            <div class="numbertext">1 / 7</div>
                             <img src="../assets/images/Fig8.png" style="width:100%">
                             <div class="text"></div>
                         </div>
                         <div class="mySlides">
-                            <div class="numbertext">2 / 4</div>
+                            <div class="numbertext">2 / 7</div>
+                            <img src="../assets/images/stop_word_ratio.png" style="width:100%">
+                            <div class="text"></div>
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 7</div>
                             <img src="../assets/images/Fig17.png" style="width:100%; padding: 5px">
                             <div class="text"></div>
                         </div>
                         <div class="mySlides">
-                            <div class="numbertext">3 / 4</div>
+                            <div class="numbertext">4 / 7</div>
+                            <img src="../assets/images/low_IDF_words.jpeg" style="width:100%; padding: 5px">
+                            <div class="text"></div>
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 7</div>
+                            <img src="../assets/images/high_IDF_words.jpeg" style="width:100%; padding: 5px">
+                            <div class="text"></div>
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">6 / 7</div>
                             <img src="../assets/images/Fig18.png" style="width:100%; padding: 5px">
                             <div class="text"></div>
                         </div>
                         <div class="mySlides">
-                            <div class="numbertext">4 / 4</div>
+                            <div class="numbertext">7 / 7</div>
                             <img src="../assets/images/Fig19.png" style="width:100%; padding: 5px">
                             <div class="text"></div>
                         </div>
@@ -79,7 +94,13 @@
                         <span class="dot" onclick="currentSlide(2)"></span>
                         <span class="dot" onclick="currentSlide(3)"></span>
                         <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                        <span class="dot" onclick="currentSlide(7)"></span>
                     </div>
+                    <p>
+                        TF-IDF (Term Frequency - Inverse Document Frequency) is a statistic intended to reflect how important a word is to a document in a collection. A smaller IDF number (approaching a value of 0) indicates that a word appears more often in the collection, while a larger one indicates a more sparce quality. Here we explore the relationship between review length, review sentiment (both Yelp user assigned and VADER identified), and mean document IDF to pull out the reviews containing the most prominent words across the each bakery collection.
+                    </p>
                 </article>
             </div>
             <div class="col-md-4">
@@ -95,6 +116,38 @@
                             <a href="SL4.html"><img src="../assets/images/Fig8.png" alt="SL4" class="imageNav-photo"></a>
                         </div>
                     </div>
+                </section>
+                <section id="imageNav-area">
+                    <table class="table text-center">
+                        <thead>
+                            <tr>
+                                <th scope="col">Branch</th>
+                                <th scope="col">Words</th>
+                                <th scope="col">Uniques</th>
+                                <th scope="col">Mean IDF</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Belmont</th>
+                                <td>9059</td>
+                                <td>2473</td>
+                                <td>2.684</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Damen</th>
+                                <td>3848</td>
+                                <td>1461</td>
+                                <td>2.274</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Logan</th>
+                                <td>1766</td>
+                                <td>833</td>
+                                <td>1.954</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </section>
                 <!-- End of the Visualizations imageNav Area -->
             </div>
