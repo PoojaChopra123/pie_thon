@@ -11,21 +11,24 @@
     <!-- Our own CSS stylesheet -->
     <link rel="stylesheet" href="assets/css/styles.css" media="screen">
     <link rel="stylesheet" href="assets/css/slider.css" media="screen">
-    <!-- <link rel="stylesheet" href="assets/css/background.css" media="screen"> -->
+    <link rel="stylesheet" href="assets/css/background.css" media="screen">
 </head>
 
 <body>
     <!-- Start of navbar -->
     <nav class="navbar navbar-default">
         <div class="container-fluid navbar-custom">
-<!--             <ul class="slideshow">
+            <ul class="slideshow">
               <li><span></span></li>
               <li><span></span></li>
               <li><span></span></li>
               <li><span></span></li>
               <li><span></span></li>
               <li><span></span></li>
-            </ul> -->
+            </ul>
+            <div class="navbar-brand" style="padding: 7px 45px; opacity: 1.0; z-index: 1000">
+              <img src="assets/images/logo.png" alt="logo" style="height: 100%">
+            </div>
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="row">
                 <div class="navbar-header">
@@ -96,6 +99,44 @@
                             <img src='https://s3-media1.fl.yelpcdn.com/bphoto/d_cNoThdf_Z7bYoj10Xjww/168s.jpg' style="width:30%;">
                             <div class="text"></div>
                         </div>
+                        <div class="mySlides" style="margin-left:5%">
+                            <img src='https://s3-media1.fl.yelpcdn.com/bphoto/M4vopNFzWH880YvfwVeSXQ/168s.jpg' style="width:30%">
+                            <div class="text"></div>
+                            <img src='https://s3-media4.fl.yelpcdn.com/bphoto/6sPTFeJd0kLWF1R9VNlhtg/168s.jpg' style="width:30%;">
+                            <div class="text"></div>
+                            <img src='https://s3-media4.fl.yelpcdn.com/bphoto/Pskq_CPZZSRTTsLcPoWQcg/348s.jpg' style="width:30%;">
+                            <div class="text"></div>
+                        </div>
+                        <div class="mySlides" style="margin-left:5%">
+                            <img src='https://s3-media4.fl.yelpcdn.com/bphoto/5DhgXK36lUh_6kBW96suIg/348s.jpg' style="width:30%">
+                            <div class="text"></div>
+                            <img src='https://s3-media1.fl.yelpcdn.com/bphoto/XQ0mBjUH-13StC0EWyC6IA/168s.jpg' style="width:30%;">
+                            <div class="text"></div>
+                            <img src='https://s3-media2.fl.yelpcdn.com/bphoto/zz87dWU8B8WxGj1D198P0g/168s.jpg' style="width:30%;">
+                            <div class="text"></div>
+                        </div>
+                        <div class="mySlides" style="margin-left:5%">
+                            <img src='https://s3-media4.fl.yelpcdn.com/bphoto/zEoei1RZfkAMV7YEzC2-Ow/348s.jpg' style="width:30%">
+                            <div class="text"></div>
+                            <img src='https://s3-media2.fl.yelpcdn.com/bphoto/rvafzjRRot9T1pK71OZSSQ/168s.jpg' style="width:30%;">
+                            <div class="text"></div>
+                            <img src='https://s3-media1.fl.yelpcdn.com/bphoto/-K9pmk1kA5A1ILJSz_T0YA/168s.jpg' style="width:30%;">
+                            <div class="text"></div>
+                        </div>
+                        <div class="mySlides" style="margin-left:5%">
+                            <img src='https://s3-media2.fl.yelpcdn.com/bphoto/2ECiWCvWKa3s5_Jyyg2NCA/168s.jpg' style="width:30%">
+                            <div class="text"></div>
+                            <img src='https://s3-media1.fl.yelpcdn.com/bphoto/8QSPftmRN51bbFfUYvqD7Q/168s.jpg' style="width:30%;">
+                            <div class="text"></div>
+                            <img src='https://s3-media4.fl.yelpcdn.com/bphoto/hpFm466HwdZOyF7r2k9MZQ/348s.jpg' style="width:30%;">
+                            <div class="text"></div>
+                        </div>
+                        <div class="mySlides" style="margin-left:5%">
+                            <img src='https://s3-media2.fl.yelpcdn.com/bphoto/YHz08KCWakW90gmoA-6ZeQ/168s.jpg' style="width:30%">
+                            <div class="text"></div>
+                            <img src='https://s3-media4.fl.yelpcdn.com/bphoto/JYN1XNBJRnpYOUy6fSAMcg/168s.jpg' style="width:30%;">
+                            <div class="text"></div>
+                        </div>
                         <!-- Next and previous buttons -->
                         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                         <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -108,13 +149,18 @@
                         <span class="dot" onclick="currentSlide(3)"></span>
                         <span class="dot" onclick="currentSlide(4)"></span>
                         <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                        <span class="dot" onclick="currentSlide(7)"></span>
+                        <span class="dot" onclick="currentSlide(8)"></span>
+                        <span class="dot" onclick="currentSlide(9)"></span>
+                        <span class="dot" onclick="currentSlide(10)"></span>
                     </div>
                     <p>
                         We analyzed bakery sales data from between July 2016 and November 2018. To help us better understand the impact of outside forces upon business successes we also pulled in weather data, yelp reviews, and took a look at the events schedule of a school located < 250 feet from the bakery. Using a combination of summary analytics, natural language processing, sentiment analysis, and machine learning we were able to come to some fascinating conclusions. 
                     </p> 
                     <p>
                         On the sales data exploration side of things you can clearly see that the 
-                        nearby French High School events, the weather, and the days of the week all assert a level of influence on bakery sales. There is a noted increse in sales on days that the school is hosting an event, and a noted decrease in sales on the days that the school is out of session.  The impact of weather on sales can be seen most clearly on weekend days, when it seems customers are less likely to brave the rain for their favorite baked goods. These data points along with many others regarding most popular products, etc. can help inform the bakery on a daily basis and prepare accordingly.
+                        nearby French High School events, the weather, and the days of the week all assert a level of influence on bakery sales. There is a noted increase in sales on days that the school is hosting an event, and a noted decrease in sales on the days that the school is out of session.  The impact of weather on sales can be seen most clearly on weekend days, when it seems customers are less likely to brave the rain for their favorite baked goods. These data points along with many others regarding most popular products, etc. can help inform the bakery on a daily basis and prepare accordingly.
                     </p>
                     <p>
                         When we take a closer look at Yelp reviews, we are able to dive even deeper into what is and isn't working at the bakery and how the public feels about this business. Overall, the public has a generally positive opinion of this bakery chain with the overall Yelp review for 250+ reviews averaging at 4+ stars. This sentiment is computationally confirmed by running sentiment analysis on the reviews, showing a overall compound sentiment score of 0.656. Upon digging further into the positive reviews, we find that the most important parts of this business' success seem to be due to the food with 'croissant', 'macaroon', 'baguette' and 'bread' looming large in our wordclouds. When looking at the negative reviews, we find that the part of the business most in need of improvement is likely related to customer service with words like 'order', 'time', and 'service' becoming more prominent. Natural Language processing allowed us to be able to further explore the specific reviews which were most representative of each bakery location, as well as the ones that seemed least in line with the other reviews left by Yelp users. Additonally, we were able to explore the relationship between IDF (Inverse Document Frequency) Scores, Yelp stars, and review length and start to explore the complex interplay of these metrics.
@@ -130,8 +176,6 @@
                         <div id="images">
                             <a href="visualizations/ML1.html"><img src="assets/images/Fig9.png" alt="ML1" class="imageNav-photo"></a>
                             <a href="visualizations/ML2.html"><img src="assets/images/Fig10.png" alt="ML2" class="imageNav-photo"></a>
-                            <a href="visualizations/ML3.html"><img src="assets/images/Fig11.png" alt="ML3" class="imageNav-photo"></a>
-                            <a href="visualizations/ML4.html"><img src="assets/images/Fig12.png" alt="ML4" class="imageNav-photo"></a>
                         </div>
                     </div>
                 </section>
