@@ -10,12 +10,22 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
     <!-- Our own CSS stylesheet -->
     <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+    <link rel="stylesheet" href="assets/css/slider.css" media="screen">
+    <!-- <link rel="stylesheet" href="assets/css/background.css" media="screen"> -->
 </head>
 
 <body>
     <!-- Start of navbar -->
-    <nav class="navbar navbar-default">
+    <nav class="navbar">
         <div class="container-fluid navbar-custom">
+<!--             <ul class="slideshow">
+              <li><span></span></li>
+              <li><span></span></li>
+              <li><span></span></li>
+              <li><span></span></li>
+              <li><span></span></li>
+              <li><span></span></li>
+            </ul> -->
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="row">
                 <div class="navbar-header">
@@ -42,17 +52,76 @@
         <section class="row">
             <div class="col-md-8">
                 <article class="description-content">
-                    <h1 class="description-header">Summary</h1>
+                    <h1 class="description-header">Project Summary</h1>
                     <hr class="description-hr" />
-                    <p>We analyzed the data from the bakery between July 2016 and November 2018. TELL MORE ABOUT APPROACH</p>
-                    <p>TELL MORE ABOUT CONCLUSIONS Our results show that the French high school events as weel as the weather and the week days influence on the sales. We have also performed sentiment analyses on the yelp review of the bakery and found that the terms "macarons" and "sandwiches" are the most frequent. Finally our machine learning analyses have established the estimated sales for 2019. </p>
+                    <div class="slideshow-container">
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides" style="margin-left:5%">
+                            <img src='https://s3-media3.fl.yelpcdn.com/bphoto/cjkFNdl2ls1zZA-oZt4fjg/348s.jpg' style="width:30%">
+                            <div class="text"></div>
+                            <img src='https://s3-media4.fl.yelpcdn.com/bphoto/oLYVKGYRJ1Q53LJrBbQDlQ/348s.jpg' style="width:30%;">
+                            <div class="text"></div>
+                            <img src='https://s3-media3.fl.yelpcdn.com/bphoto/RVS4jftM2xJF6QjIfsX80g/168s.jpg' style="width:30%;">
+                            <div class="text"></div>
+                        </div>
+                        <div class="mySlides" style="margin-left:5%">
+                            <img src='https://s3-media4.fl.yelpcdn.com/bphoto/SqCN8-oJyTMMKSQr7TVJxg/348s.jpg' style="width:30%">
+                            <div class="text"></div>
+                            <img src='https://s3-media1.fl.yelpcdn.com/bphoto/U83E0Sh55kKeKM48_K7-Tw/168s.jpg' style="width:30%;">
+                            <div class="text"></div>
+                            <img src='https://s3-media3.fl.yelpcdn.com/bphoto/V7vqiri3bWhnR6_Og3D1Rw/168s.jpg' style="width:30%;">
+                            <div class="text"></div>
+                        </div>
+                        <div class="mySlides" style="margin-left:5%">
+                            <img src='https://s3-media4.fl.yelpcdn.com/bphoto/mCEC5RBQWaG1KbcaSJS4mQ/168s.jpg' style="width:30%">
+                            <div class="text"></div>
+                            <img src='https://s3-media3.fl.yelpcdn.com/bphoto/hwoFsaddgmbQx5igvbh9xg/348s.jpg' style="width:30%;">
+                            <div class="text"></div>
+                            <img src='https://s3-media4.fl.yelpcdn.com/bphoto/E2TW_HGX6-rbVuiQ5hiDpw/348s.jpg' style="width:30%;">
+                            <div class="text"></div>
+                        </div>
+                        <div class="mySlides" style="margin-left:5%">
+                            <img src='https://s3-media3.fl.yelpcdn.com/bphoto/-7Sa1xXVN7idZqHbhdW_cA/348s.jpg' style="width:30%">
+                            <div class="text"></div>
+                            <img src='https://s3-media2.fl.yelpcdn.com/bphoto/N0-CLwKLMhl1YqdoYzCIvw/168s.jpg' style="width:30%;">
+                            <div class="text"></div>
+                            <img src='https://s3-media4.fl.yelpcdn.com/bphoto/oxAjHdk3_dYVeWwCr7AvNg/168s.jpg' style="width:30%;">
+                            <div class="text"></div>
+                        </div>
+                        <div class="mySlides" style="margin-left:5%">
+                            <img src='https://s3-media3.fl.yelpcdn.com/bphoto/i43B7irOgbBOigZSzpmMOg/348s.jpg' style="width:30%">
+                            <div class="text"></div>
+                            <img src='https://s3-media1.fl.yelpcdn.com/bphoto/UTG9CUNHd2eUfUxprliAqw/168s.jpg' style="width:30%;">
+                            <div class="text"></div>
+                            <img src='https://s3-media1.fl.yelpcdn.com/bphoto/d_cNoThdf_Z7bYoj10Xjww/168s.jpg' style="width:30%;">
+                            <div class="text"></div>
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                    </div>
+                    <p>
+                        We analyzed bakery sales data from between July 2016 and November 2018. To help us better understand the impact of outside forces upon business successes we also pulled in weather data, yelp reviews, and took a look at the events schedule of a school located < 250 feet from the bakery. Using a combination of summary analytics, natural language processing, sentiment analysis, and machine learning we were able to come to some fascinating conclusions. 
+                    </p> 
+                    <p>
+                        TELL MORE ABOUT CONCLUSIONS Our results show that the French high school events as weel as the weather and the week days influence on the sales. We have also performed sentiment analyses on the yelp review of the bakery and found that the terms "macarons" and "sandwiches" are the most frequent. Finally our machine learning analyses have established the estimated sales for 2019.
+                    </p>
                 </article>
             </div>
             <div class="col-md-4">
                 <!-- Start of Visualizations imageNav Area -->
                 <section id="imageNav-area">
                     <div class="imageNav-content">
-                        <h2 class="imageNav-header">Yelp Visualizations</h2>
+                        <h2 class="imageNav-header text-center">Yelp Visualizations</h2>
                         <hr />
                         <div id="images">
                             <a href="visualizations/SL1.html"><img src="assets/images/Fig5.png" alt="Sentiment analyses 1" class="imageNav-photo"></a>
@@ -74,6 +143,36 @@
             January 2019
         </p>
     </footer>
+    <script type="text/javascript">
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+    </script>
     <!-- End of footer -->
     <!-- jQuery CDN -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
